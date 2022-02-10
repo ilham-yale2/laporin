@@ -1,0 +1,287 @@
+*{
+    scroll-behavior: smooth;
+}
+
+aside ul {
+    list-style: none;
+}
+
+.wrapper{
+    margin-left: 4rem;
+    background-color: #e2e2e2;
+}
+
+.header{
+    vertical-align: sub;
+}
+
+.header input{
+    min-width: 400px;
+}
+
+.nav-aside{
+    margin: 40px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+aside ul a:hover .nav-aside{
+    animation: bounce .9s ease infinite alternate-reverse;
+}
+
+.nav-aside.active,aside ul a:hover .nav-aside{
+    box-shadow: 0px 0px 26px rgba(135, 199, 203,.5);
+    background-color: #87C7CB;
+    color: #01394F;
+}
+
+.kategori{
+    border: 2px solid #008891;
+}
+
+.kategori:hover{
+    background-color: #008891;
+    color: white;
+}
+
+.kategori .kategori_name{
+    transform : scale(1.2);
+    border : 1px solid #008891;
+    margin-right: 1rem;
+}
+
+.form-lapor .form-control{
+    border: 2px solid #008891;
+}
+
+.card-laporan{
+    background-color:  rgb(0, 136, 145);
+}
+
+.card-laporan:hover .overlay-card{
+    transform: translateY(0%);
+}
+
+.card-laporan .overlay-card{
+    background: linear-gradient(to bottom, rgba(0, 136, 145, .9),rgba(0, 136, 145, .9),rgba(255, 255, 255, 0.3));
+    transition: .3s ease-in-out;
+    transform: translateY(100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.fotoProfile ,.fotoProfile img{
+    width: 200px;
+    height: 200px;
+}
+
+.fotoProfile div{
+    height: 100%;
+    opacity: .4;
+    text-align: center;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    font-size: 40px;
+    background-color: rgba(0, 136, 145, .8);
+}
+
+.fotoProfile:hover div{
+    transform: translateY(-80px);
+    border-radius: 30px;
+    opacity: 1;
+}
+
+.fotoProfile div svg{
+    margin-top: 8.7rem;
+    transition: .4s all;
+}
+
+.fotoProfile:hover div svg{
+    margin-top: 1rem;
+}
+
+.loader{
+    height: 120px;
+    width: 120px;
+}
+
+.loader span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+
+}
+
+.loader span::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    transform: scale(0);
+    background-color: #fff;
+    border-radius: 50%;
+    animation: loader 2s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+.rocket{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    animation: rocket 2s linear infinite;
+    animation-delay: -1s;
+}
+
+@keyframes rocket{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(370deg);
+    }
+}
+
+.rocket svg{
+    content: '\f072';
+    font-family: fontAwesome;
+    position: absolute;
+    top: 80px;
+    left: 85px;
+    color: #fff;
+    font-size: 60px;
+    transform: rotate(180deg);
+}
+
+#loader{
+    background-color: rgba(52, 141, 148, .9);
+    z-index: 1060!important;
+}
+
+.status{
+    right: 10px;
+    top: 10px;
+}
+
+
+@keyframes loader {
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(1.2);
+    }
+    80%,100%{
+        transform: scale(0);
+    }
+}
+
+@keyframes bounce{
+    to {
+        transform: translateX(0);
+    }
+    from {
+        transform: translateX(25px);
+    }
+}
+
+
+#hand{
+    transform-origin: bottom;
+    transform-box: fill-box;
+    animation: hand 1s ease-in-out infinite alternate;
+}
+
+@keyframes hand {
+    to {
+        transform: rotate(0)translateY(-4px);
+    }from{
+        transform: rotate(10deg)translateY(-15px)translateX(-5px);
+    }
+}
+
+#link{
+ border: 1px solid rgb(177, 177, 177);
+}
+
+
+.card-img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.card-img img{
+    width: 100%;
+    min-height: 200px;
+
+}
+
+.v-none{
+    visibility: hidden;
+}
+
+.PrintFooter{
+    text-align: center;
+}
+
+.ketentuan .number{
+    background-color: #008891;
+    color: white;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+}
+.ketentuan .text{
+    padding-left: 1rem;
+}
+
+.ketentuan li{
+    align-items: center;
+    margin-bottom: .7rem;
+}
+
+@media(max-width: 767px){
+    .ketentuan .text{
+        font-size: 14px;
+    }
+    
+}
+
+.mail-danger{
+    border: 3px dashed ;
+    border-color: #008891;
+}
+
+.mail{
+    transition: .3s ease-in-out;
+}
+
+.alert-danger:hover{
+    box-shadow: 0 .3rem .7rem #f5c6cb !important;
+}
+.alert-warning:hover{
+    box-shadow: 0 .3rem .7rem #ffeeba !important;
+}
+.alert-success:hover{
+    box-shadow: 0 .3rem .7rem #c3e6cb !important;
+}
+.alert-primary:hover{
+    box-shadow: 0 .3rem .7rem #b8daff !important;
+}
+
+.mail {
+    align-items: center;
+}

@@ -1,0 +1,152 @@
+@font-face {
+    font-family: viga;
+    src: url('../webfonts/fonts/Viga-Regular.ttf');
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('../webfonts/fonts/Montserrat-Regular.ttf');
+}
+
+.title {
+    font-family: viga;
+}
+
+.text{
+    font-family: montserrat;
+}
+
+.navbarImg{
+    width: 40px;
+}
+
+.bg-darkBlue{
+
+    background-color: #00587A;
+}
+
+.bg-darkGreen{
+    background-color: #008891;
+}
+
+.btn-darkBlue{
+    background-color: #00587A;
+    color: white!important;
+    transition: .2s ease-in-out;
+}
+
+.btn-darkBlue:hover{
+    box-shadow: 0px 5px 10px #00587A;
+
+}
+
+.radius-10{
+    border-radius: 10px;
+}
+
+.radius-20{
+    border-radius: 20px;
+}
+
+.text-14{
+    font-size: 14px;
+}
+.text-16{
+    font-size: 16px;
+}
+.text-18{
+    font-size: 18px;
+}
+
+.text-20{
+    font-size: 20px;
+}
+
+.text-25{
+    font-size: 25px;
+}
+.text-35{
+    font-size: 35px;
+}
+
+.text-40{
+    font-size: 40px;
+}
+
+.text-darkBlue{
+    color: #00587A;
+}
+
+.text-darkGreen{
+    color:  #008891;
+}
+
+.shadow-darkBlue{
+    box-shadow: 0px 5px 10px #00587A;
+}
+
+.z-index-1{
+    z-index: 1;
+}
+
+.z-index-2{
+    z-index: 2;
+}
+
+.top-0{
+    top: 0;
+}
+
+.bottom-0{
+    bottom:0;
+}
+
+.left-0{
+    left:0;
+}
+
+.right-0{
+    right:0;
+}
+
+.px-4r{
+    padding-left: 4rem!important;
+    padding-right: 4rem!important;
+}
+
+.flex-wrap-wrap{
+    flex-wrap: wrap;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.Mshadow{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .2);
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+@media only screen and(min-width:992px){
+    .md-block{
+        display: block;
+    }
+}
+
+@media (max-width:767px){
+    .md-block{
+        display: none;
+    }
+}
+
+.border-dashed{
+    border: 3px dashed #00587A;
+}
+
+.bg-light-hover:hover{
+    background-color: #f4f4f4;
+    transition: .3s ease-in-out;
+}

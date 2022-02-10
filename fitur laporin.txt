@@ -1,0 +1,49 @@
+
+================  Fitur general ================
+
+1. landing page (localhost:8000)
+
+================  Fitur user ================
+
+ 1. login & registrasi (localhost:8000/login)
+ 2. Dashboard (localhost:8000/user)
+ 3. Mails (localhost:8000/mails)
+ 4. Pengaduan (localhost:8000/lapor)
+ 5. Profile (localhost:8000/profile)
+ 6. Logout
+
+================  Fitur admin ================
+
+ 1. login (localhost:8000/admin/login)
+ 2. Dashboard (localhost:8000/admin)
+ 3. Data Laporan (localhost:8000/pengaduan)
+ 4. Data Users dan admin (localhost:8000/users)
+ 5. Profile (localhost:8000/profile)
+ 6. Verifikasi Pengaduan (localhost:8000/pengaduan)
+ 7. Tanggapi Laporan (localhost:8000/pengaduan)
+ 8. Pengembalian Laporan (localhost:8000/pengaduan)
+ 9. Generate Pengaduan (localhost:8000/print/{id})
+ 10.Registrasi admin (localhost:8000/registrasi)
+ 
+
+================  Fitur Petugas ================
+
+1. login (localhost:8000/admin/login)
+ 2. Dashboard (localhost:8000/admin)
+ 3. Data Laporan (localhost:8000/pengaduan)
+ 4. Data Users dan admin (localhost:8000/users)
+ 5. Profile (localhost:8000/profile)
+ 6. Verifikasi Pengaduan (localhost:8000/pengaduan)
+ 7. Tanggapi Laporan (localhost:8000/pengaduan)
+ 8. Pengembalian Laporan (localhost:8000/pengaduan)
+ 9. Verikasi admin (localhost:8000/register)
+
+
+nama file database : laporin.sql 
+
+default login user ->  username:ilhamm
+  		       password: ilham123
+
+default login admin ->  username:ilham123
+  		       password: ilham123
+

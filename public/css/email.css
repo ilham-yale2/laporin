@@ -1,0 +1,96 @@
+@font-face {
+    font-family: monserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: viga;
+    src: url(../fonts/Viga-Regular.ttf);
+}
+
+.monserrat {
+    font-family: monserrat;
+}
+
+.poppins {
+    font-family: poppins;
+}
+
+.viga {
+    font-family: viga;
+}
+
+.arciform {
+    font-family: arciform;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: viga;
+}
+
+p,
+input {
+    font-family: monserrat;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btn-spring-green {
+    background-color: #14EBA2
+}
+
+.btn-white {
+    background-color: #ffffff;
+}
+
+.text-spring-green {
+    color: #14EBA2;
+}
+
+.text-dark-green {
+    color: #118A61;
+}
+
+.bg-dark-green,
+.btn-dark-green {
+    background-color: #118A61;
+}
+
+.bg-spring-green {
+    background-color: #14EBA2;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-relative {
+    position: relative;
+}
+
+
+.main{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    background-color: rgb(242, 242, 242);
+    transform: translate(-50%, -50%);
+}
+
+.main div span {
+    font-size: 30px;
+    font-family: viga;
+}
+
+
+.btn {
+    border-radius: 0;
+}
